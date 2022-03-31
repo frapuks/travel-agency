@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------------GENERAL-------------------------------*/
+
+body
+{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #444;
+}
+
+h1
+{
+    font-family: 'Crete Round', serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.point
+{
+    color: #ff7a00;
+}
+
+a
+{
+    text-decoration: none;
+    color: #444;
+    transition-duration: 200ms;
+}
+
+a:hover
+{
+    color: #ff7a00;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0px;
+}
+
+p
+{
+    font-size: 0.8em;
+    line-height: 1.7em;
+    color: #7A7A7A;
+}
+
+button
+{
+    background-color: #ff7a00;
+    border-radius: 3px;
+    border-style: none;
+    color: white;
+    padding: 0.5em 1em;
+    transition-duration: 200ms;
+}
+
+button:hover
+{
+    background-color: #02b8dd;
+    transform: scale(1.1);
+}
+
+h3
+{
+    border-bottom: solid 1px #444;
+    padding-bottom: 0.5em;
+}
+
+
+/*-------------------------------HEADER-------------------------------*/
+
+.header-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3em;
+    
+}
+
+ul
+{
+    width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+li
+{
+    font-weight: bold;
+}
+
+
+/*-------------------------------Home-------------------------------*/
+
+.home
+{
+    background: url("images/main.jpg") center;
+    height: 35em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.button1
+{
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+/*-------------------------------STEPS-------------------------------*/
+
+.steps
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.steps-container
+{
+    width: 250px;
+    text-align: center;
+}
+
+
+
+
+/*-------------------------------TRACKS-------------------------------*/
+
+.tracks
+{
+    background-color: #E4E4E4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.tracks-article
+{
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#tracks-article-left
+{
+    background: url("images/article-image-1.jpg") center;
+    background-size: cover;
+    margin: 2em 4em;
+}
+
+#tracks-article-right
+{
+    background: url("images/article-image-2.jpg") center;
+    background-size: cover;
+    margin: 2em 4em;
+}
+
+.white
+{
+    width: 40%;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.white p
+{
+    font-style: italic;
+}
+
+
+
+
+/*-------------------------------CONTACT-------------------------------*/
+
+.contact
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact p
+{
+    margin-bottom: 3em;
+}
+
+form
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+label
+{
+    font-weight: bold;
+    color: #7A7A7A;
+    font-size: 1.5em;
+}
+
+input
+{
+    padding: 1em;
+    border-radius: 5px;
+    border: solid 1px #7A7A7A;
+}
+
+.input-text
+{
+    margin-right: 2em;
+}
+
+.input-button
+{
+    font-weight: bold;
+    color: white;
+    background-color: #02b8dd;
+    border-style: none;
+    border-radius: 3px;
+    transition-duration: 200ms;
+}
+
+.input-button:hover
+{
+    transform: scale(1.1);
+    background-color: #444;
+}
+
+/*-------------------------------FOOTER-------------------------------*/
+
+footer
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #444;
+    padding: 3em;
+    text-align: center;
+}
+
+footer h1
+{
+    color: white
+}
+
+/*-------------------------------MEDIA QUERY-------------------------------*/
+
+@media (max-width: 600px) {
+    ul
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    form
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    input
+    {
+        margin: 0.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .white
+    {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
